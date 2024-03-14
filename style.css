@@ -53,7 +53,6 @@ body {
 
 #demo {
   background: linear-gradient(135deg, #001f3f 0%, #00c6ff 100%);
-
   padding: 28px 0 72px;
   text-align: center;
 }
@@ -63,10 +62,7 @@ body {
   color: #e1f5ff; /* Very light gray text color */
   margin-bottom: 0.75em;
 }
-#demo .invite-now-wrapper {
-  height: 102px;
-}
-#demo .invite-now-wrapper .invite-now {
+#demo .invite-now-wrapper .invite-now .invite-link {
   display: inline-block;
   font-size: 2em;
   font-weight: 700;
@@ -80,35 +76,40 @@ body {
   border-bottom: 6px solid #9ac8e9; /* Updated border color */
   transition: 200ms;
   user-select: none;
+  text-decoration: none; /* Remove underline from anchor */
 }
 
-#demo .invite-now-wrapper .invite-now:hover {
+#demo .invite-now-wrapper .invite-now .invite-link:hover {
   border-bottom-width: 10px;
   margin-top: -4px;
 }
-#demo .invite-now-wrapper .invite-now:active {
+
+#demo .invite-now-wrapper .invite-now .invite-link:active {
   border-bottom-width: 4px;
   margin-top: 2px;
   transition: 50ms;
 }
+
 #demo .discord-app-mount {
   text-align: left;
-  height: 600px;
+  height: 100vh;
   position: relative;
 }
 
+/* Default styles for desktop */
 .discord-app {
   font-size: 16px;
   user-select: none;
   color: white;
-  width: 1000px;
+  width: 95%;
   height: 600px;
   background: #36393f;
   position: absolute;
   border-radius: 6px;
   overflow: hidden;
-  left: 50%;
-  margin-left: -500px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .discord-app ::-webkit-scrollbar {
   width: 14px;
