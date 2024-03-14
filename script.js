@@ -6,7 +6,7 @@ var demoEle = { lastMsgGroup: null };
 
 var users = {
     sighfy: {
-        username: 'Sighfy',
+        username: 'Epic Player',
         nameColor: 'hsl(345, 50%, 52%)',
         avatar: '/images/sighfy.png'
     },
