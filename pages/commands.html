@@ -102,19 +102,25 @@
                     <div class="commands-section" id="Category0">
                         
                             
-                            <div class="accordion accordion-flush mt-2" id="ban">
+                            <div class="accordion accordion-flush mt-2" id="server-config">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fban">
-                                             /ban&nbsp; <span class="command-description">- ban a member</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fserver-config">
+                                             server-config&nbsp; <span class="command-description">- Access the configuration menu</span>
                                         </button>
                                     </h2>
-                                    <div id="fban" class="accordion-collapse collapse" data-bs-parent="#ban">
+                                    <div id="fserver-config" class="accordion-collapse collapse" data-bs-parent="#server-config">
                                         <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
+                                            <span>Alias:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /ban @memebr<br>
+                                                    sc, config-server, cs<br>
+                                                
+                                            </span>
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    dna sc<br>
                                                 
                                             </span>
                                         </div>
@@ -122,48 +128,6 @@
                                 </div>
                             </div>
                         
-                            
-                            <div class="accordion accordion-flush mt-2" id="kick">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fkick">
-                                             /kick&nbsp; <span class="command-description">- kick a member</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fkick" class="accordion-collapse collapse" data-bs-parent="#kick">
-                                        <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /kick @memebr
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="mute">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fmute">
-                                             /mute&nbsp; <span class="command-description">- mute a member</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fmute" class="accordion-collapse collapse" data-bs-parent="#mute">
-                                        <div class="accordion-body">
-                                            <span>Usage Examples:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /mute @member
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
                     </div>
                 
                     
@@ -182,7 +146,7 @@
                                             <span>Usage Examples:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /help<br>/help command:ban
+                                                    /help<br>/help command:server-config
                                                 
                                             </span>
                                         </div>
@@ -360,7 +324,7 @@
     
     <input id="commands" value="[
         {
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Moderation Commands&#34;,&#34;commands&#34;:[&#34;ban&#34;,&#34;kick&#34;,&#34;mute&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Moderation Commands&#34;,&#34;commands&#34;:[&#34;server-config&#34;]
         },{
             &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]
         },{
