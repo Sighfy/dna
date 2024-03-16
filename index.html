@@ -1,5 +1,5 @@
 <!--
-  | Website designed by JstnLT (https://jstnlt.my.id)
+  | Website landing page designed by JstnLT (https://jstnlt.my.id)
   | This project is open source: https://github.com/JastinXyz/discord-bot-landing-page-web
 -->
 
@@ -39,15 +39,13 @@
       aria-label="main navigation"
     >
       <div class="navbar-brand mt-2 mb-2">
-        <a class="navbar-item" href="#">
-          <strong>DNA Bot</strong>
+        <a class="navbar-item" href="https://www.sighfy.dev">
+          <!-- <strong>DNA Bot</strong> -->
 
           <!-- or if you want to use image -->
-          <!-- <img
-            src="image link or path"
-            width="112"
-            height="28"
-          /> -->
+          <img
+            src="images/sighfy.PNG"
+          />
         </a>
 
         <a
@@ -112,11 +110,11 @@
         <div class="">
           <div class="columns">
             <div class="column mr-6 mt-12" data-aos="fade-up">
-              <p class="title has-text-white has-text-weight-bold">
-                The last ERPG Discord bot you'll ever need
+              <p id="bot-phrase" class="title has-text-white has-text-weight-bold">
+                Revolutionize ERPG Discord communities with DNA
               </p>
               <p class="subtitle has-text-grey-light is-size-6 mt-3">
-                DNA is an ERPG server and players assistant to handle all of your server or playing needs
+                Welcome to DNA, the premier assistant for servers and players of the EPIC RPG Discord Bot. It's the first fully customizable solution tailored specifically for ERPG servers and players, offering extensive features and flexibility.
               </p>
               <div class="buttons">
                 <a href="https://discord.com/api/oauth2/authorize?client_id=949087301621927957&permissions=1512097311856&scope=bot" class="button is-info">
@@ -148,6 +146,36 @@
         ></a>
       </div>
     </section>
+    
+    <script>
+      // Array containing all five variations
+      const phrases = [
+        "Elevate ERPG Discord servers with DNA",
+        "Empower ERPG Discord guilds with DNA",
+        "Enhance ERPG Discord communities with DNA",
+        "Innovate ERPG Discord servers with DNA"
+      ];
+    
+      let currentIndex = 0;
+    
+      // Function to display the current phrase
+      function displayCurrentPhrase() {
+        document.getElementById("bot-phrase").textContent = phrases[currentIndex];
+      }
+    
+      // Function to scroll to the next phrase
+      function scrollToNextPhrase() {
+        currentIndex = (currentIndex + 1) % phrases.length;
+        displayCurrentPhrase();
+      }
+    
+      // Call the function to display the first phrase when the page loads
+      displayCurrentPhrase();
+    
+      // Set interval to scroll to the next phrase every 5 seconds
+      setInterval(scrollToNextPhrase, 5000);
+    </script>    
+    
     <!-- Hero Section End -->
 
     <!-- Hero Waves Start -->
@@ -182,7 +210,7 @@
           <div class="column" data-aos="fade-left">
             <img
               class="image has-image-centered"
-              src="assets/img/features1.svg"
+              src="images/dna.PNG"
               alt="feature1 img"
               style="width: 23rem;"
             />
@@ -197,7 +225,7 @@
           <div class="column" data-aos="fade-right">
             <img
               class="image has-image-centered"
-              src="assets/img/features2.svg"
+              src="images/dna.PNG"
               alt="feature1 img"
               style="width: 23rem;"
             />
@@ -234,7 +262,7 @@
           <div class="column" data-aos="fade-left">
             <img
               class="image has-image-centered"
-              src="assets/img/features3.svg"
+              src="images/dna.PNG"
               alt="feature1 img"
               style="width: 23rem;"
             />
@@ -249,7 +277,7 @@
           <div class="column" data-aos="fade-right">
             <img
               class="image has-image-centered"
-              src="assets/img/features4.svg"
+              src="images/dna.PNG"
               alt="feature1 img"
               style="width: 23rem;"
             />
@@ -278,12 +306,12 @@
 
       <div class="columns mt-6">
         <div class="column has-text-centered">
-          <p class="title has-text-weight-bold lined">000</p>
+          <p class="title has-text-weight-bold lined">009</p>
           <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-server"></i> Servers</span>
         </div>
 
         <div class="column has-text-centered">
-          <p class="title has-text-weight-bold lined">000</p>
+          <p class="title has-text-weight-bold lined">026</p>
           <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-terminal"></i> Commands</span>
         </div>
 
@@ -300,7 +328,7 @@
       <div class="columns">
         <div class="column has-text-left">
           <p class="title has-text-weight-bold">
-            Ready to try <span class="blurple">[your bot]</span>?
+            Ready to try <span class="blurple">DNA</span>?
           </p>
           <p class="subtitle mt-3 has-text-gray">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -330,13 +358,13 @@
         </div>
 
         <p>
-          <span class="has-text-weight-bold">[Your Bot]</span>
+          <span class="has-text-weight-bold">DNA</span>
           <br />
-          &copy; <span id="cp-year"></span> Copyright [Bot Owner]. All Rights
+          &copy; <span id="cp-year"></span> Copyright Sighfy. All Rights
           Reserved.
         </p>
 
-        <p style="letter-spacing: 0.1em;" class="is-uppercase">
+        <!--<p style="letter-spacing: 0.1em;" class="is-uppercase">
           Website Designed By
           <a
             href="https://jstnlt.my.id"
@@ -349,7 +377,7 @@
             target="_blank"
             >Github</a
           >
-        </p>
+        </p> --> 
       </div>
     </footer>
     <!-- Footer Section End -->
