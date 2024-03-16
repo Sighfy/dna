@@ -3,6 +3,8 @@ body {
   margin: 0;
   font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
+  background: #9ac8e9;
+  overflow: hidden;
 }
 
 #header {
@@ -53,7 +55,6 @@ body {
 
 #demo {
   background: linear-gradient(135deg, #001f3f 0%, #00c6ff 100%);
-  padding: 28px 0 72px;
   text-align: center;
 }
 #demo .title {
