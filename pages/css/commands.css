@@ -35,6 +35,11 @@ nav {
 	position: relative;
 	bottom: 6px;
 }
+.navbar-brand img {
+    max-width: 40px; /* Adjust this value to your desired maximum width */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align image vertically */
+}
 
 .btn-login {
 	background-color: var(--main-color);
