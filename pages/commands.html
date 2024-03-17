@@ -97,9 +97,11 @@
                     
                         <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-coins"></i>&nbsp; Miniboss Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Leveling Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Portal Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Premium Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Timezone Commands</button>
+                        
+                        <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Config Commands</button>
                     
                 </div>
             </div>
@@ -302,7 +304,32 @@
                             </div> -->
                         
                     </div>
-                
+
+
+                    <div class="commands-section" id="Category4">
+                        
+                            
+                        <div class="accordion accordion-flush mt-2" id="reactionrole">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#freactionrole">
+                                        <span class='badge badge-vip rounded-pill'><i class='fa-solid fa-crown'></i></span>&nbsp; /reactionrole&nbsp; <span class="command-description">- create a new reaction role</span>
+                                    </button>
+                                </h2>
+                                <div id="freactionrole" class="accordion-collapse collapse" data-bs-parent="#reactionrole">
+                                    <div class="accordion-body">
+                                        <span>Usage Examples:</span> <br />
+                                        <span class="examples">
+                                            
+                                                /reactionrole
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
             </div>
         </div>
     </div>
@@ -338,31 +365,29 @@
                         <div class="col-lg-3 item social">
                             <a href="https://discord.gg/kEcRuXJtmH"><i class="fa-brands fa-discord"></i></a>
                             <a href="https://github.com/Sighfy"><i class="fa-brands fa-github"></i></a>
-                            <!-- <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a> -->
                             <p class="copyright">&copy; <span id="cp-year"></span> Sighfy. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
-                <div class="page-footer font-small text-light mt-5">
+                <!-- <div class="page-footer font-small text-light mt-5">
                 <div class="footer-copyright text-center">&copy; <span id="cp-year"></span> Sighfy.
-                    <!-- <a href="https://sighfy.dev">Sighfy</a> -->
-                    All Rights Reserved.
+                     <a href="https://sighfy.dev">Sighfy</a>  All Rights Reserved.
                   </div>
-                </div>
+                </div> -->
             </footer>
         </div>
     
     <input id="commands" value="[
         {
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-circle-question&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;start&#34;,&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-circle-question&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;start&#34;,&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;,&#34;support&#34;]
         },{
             &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-coins&#39;&gt;&lt;/i&gt;&amp;nbsp; Miniboss Commands&#34;,&#34;commands&#34;:[]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Portal Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Premium Commands&#34;,&#34;commands&#34;:[&#34;reactionrole&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Timezone Commands&#34;,&#34;commands&#34;:[&#34;reactionrole&#34;]
+        },{
+            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Config Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]
         }]" hidden />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/fontawesome/all.min.js"></script>
@@ -382,6 +407,9 @@
             
                 document.getElementById("CategoryBtn3").classList.remove("active");
                 document.getElementById("Category3").setAttribute("hidden", "");
+                
+                document.getElementById("CategoryBtn4").classList.remove("active");
+                document.getElementById("Category4").setAttribute("hidden", "");
             
             elm.classList.add("active");
             if(elm.id.replace("CategoryBtn", "") == "All"){
@@ -393,6 +421,8 @@
                     document.getElementById("Category2").removeAttribute("hidden");
                 
                     document.getElementById("Category3").removeAttribute("hidden");
+                    
+                    document.getElementById("Category4").removeAttribute("hidden");
                 
             }else{
                 document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
