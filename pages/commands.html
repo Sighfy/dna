@@ -31,17 +31,25 @@
 
     <div class="navbar navbar-expand-md bg-dark navbar-dark">
         <div class="container">
-            <a href="../index.html" class="navbar-brand text-info">DNA Bot</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu"><span
-                    class="navbar-toggler-icon"></span></button>
-
+            <!-- Toggle between text and image for the logo -->
+            <!-- Text version -->
+            <!--<a href="../index.html" class="navbar-brand text-info">DNA Bot</a>-->
+            
+            <!-- Image version -->
+            <a href="../index.html" class="navbar-brand">
+                <img src="../images/dna.PNG" alt="DNA Bot" class="img-fluid logo-img">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
             <div class="collapse navbar-collapse" id="mainmenu">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Links</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="linksdrop" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Links</a>
                         <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
                             <li><a class="dropdown-item text-muted" href="https://discord.com/api/oauth2/authorize?client_id=949087301621927957&permissions=1512097311856&scope=bot">Invite</a></li>
                             <li><a class="dropdown-item text-muted" href="https://github.com/Sighfy">Github</a></li>
@@ -49,10 +57,12 @@
                         </ul>
                     </li>
                 </ul>
+                <!-- Moved "Login" button inside the navbar-collapse -->
                 <!-- <li class="navbar-nav nav-item"><a href="" class="btn btn-outline-info">Login</a></li> -->
             </div>
         </div>
     </div>
+    
 
     <div class="container">
         <section style="margin-top: 9%;">
@@ -83,9 +93,9 @@
                     <hr />
                     <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-bars"></i>&nbsp; All Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Moderation Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-circle-question"></i>&nbsp; General Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; General Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-coins"></i>&nbsp; Miniboss Commands</button>
                     
                         <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Leveling Commands</button>
                     
@@ -102,59 +112,57 @@
                     <div class="commands-section" id="Category0">
                         
                             
-                            <div class="accordion accordion-flush mt-2" id="server-config">
+                            <div class="accordion accordion-flush mt-2" id="start">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fserver-config">
-                                             server-config&nbsp; <span class="command-description">- Access the configuration menu</span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fstart">
+                                             /start&nbsp; <span class="command-description">- Explain the basics of how to use DNA
+                                            </span>
                                         </button>
                                     </h2>
-                                    <div id="fserver-config" class="accordion-collapse collapse" data-bs-parent="#server-config">
+                                    <div id="fstart" class="accordion-collapse collapse" data-bs-parent="#start">
                                         <div class="accordion-body">
                                             <span>Alias:</span> <br />
                                             <span class="examples">
                                                 
-                                                    sc, config-server, cs<br>
+                                                    register<br>
                                                 
                                             </span>
                                             <span>Usage:</span> <br />
                                             <span class="examples">
                                                 
-                                                    dna sc<br>
+                                                    dna start<br>/start<br>
                                                 
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        
-                    </div>
-                
-                    
-                    <div class="commands-section" id="Category1">
-                        
-                            
                             <div class="accordion accordion-flush mt-2" id="help">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
                                         <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
-                                             /help&nbsp; <span class="command-description">- Bot&#39;s help menu</span>
+                                             help&nbsp; <span class="command-description">- Bot&#39;s help menu</span>
                                         </button>
                                     </h2>
                                     <div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
                                         <div class="accordion-body">
+                                            <span>Alias:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    register<br>
+                                                
+                                            </span>
                                             <span>Usage Examples:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /help<br>/help command:server-config
+                                                    dna help<br>/help command:start
                                                 
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        
-                            
                             <div class="accordion accordion-flush mt-2" id="ping">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
@@ -174,8 +182,6 @@
                                     </div>
                                 </div>
                             </div>
-                        
-                            
                             <div class="accordion accordion-flush mt-2" id="invite">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
@@ -195,6 +201,32 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="accordion accordion-flush mt-2" id="support">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsupport">
+                                             /support&nbsp; <span class="command-description">- support bot to your server</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fsupport" class="accordion-collapse collapse" data-bs-parent="#support">
+                                        <div class="accordion-body">
+                                            <span>Usage Examples:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    /support
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                
+                    
+                    <div class="commands-section" id="Category1">
+                            
+                            
                         
                     </div>
                 
@@ -324,9 +356,9 @@
     
     <input id="commands" value="[
         {
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Moderation Commands&#34;,&#34;commands&#34;:[&#34;server-config&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-circle-question&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;start&#34;,&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-coins&#39;&gt;&lt;/i&gt;&amp;nbsp; Miniboss Commands&#34;,&#34;commands&#34;:[]
         },{
             &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]
         },{
