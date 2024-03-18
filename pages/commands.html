@@ -346,8 +346,148 @@
                 
                     
                     <div class="commands-section" id="Category1">
-                            
-                            
+
+
+                        <div class="accordion accordion-flush mt-2" id="miniboss">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss">
+                                         miniboss&nbsp; <span class="command-description">- Show a submenu to use any of the miniboss commands</span>
+                                    </button>
+                                </h2>
+                                <div id="fminiboss" class="accordion-collapse collapse" data-bs-parent="#miniboss">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            
+                                                mb<br>
+                                            
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            
+                                                dna mb<br>
+                                            
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="miniboss_settings">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss_settings">
+                                         miniboss settings&nbsp; <span class="command-description">- Manage miniboss settings</span>
+                                    </button>
+                                </h2>
+                                <div id="fminiboss_settings" class="accordion-collapse collapse" data-bs-parent="#miniboss_settings">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+
+                                                setting, st, set<br>
+
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+
+                                                dna mb st<br>
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="miniboss_bans">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss_bans">
+                                         miniboss bans&nbsp; <span class="command-description">- Manage miniboss bans</span>
+                                    </button>
+                                </h2>
+                                <div id="fminiboss_bans" class="accordion-collapse collapse" data-bs-parent="#miniboss_bans">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+
+                                                ban, b<br>
+
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+
+                                                dna mb ban<br>
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="miniboss_start">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss_start">
+                                         miniboss start&nbsp; <span class="command-description">- Start a boosted miniboss prompt</span>
+                                    </button>
+                                </h2>
+                                <div id="fminiboss_start" class="accordion-collapse collapse" data-bs-parent="#miniboss_start">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+
+                                                s<br>
+
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+
+                                                dna mb start<br>
+
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+
+                                                currently the same as a miniboss giveaway<br>
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="miniboss_giveaway">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss_giveaway">
+                                         miniboss giveaway&nbsp; <span class="command-description">- Start a boosted miniboss giveaway</span>
+                                    </button>
+                                </h2>
+                                <div id="fminiboss_giveaway" class="accordion-collapse collapse" data-bs-parent="#miniboss_giveaway">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+
+                                                g, ga<br>
+
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+
+                                                dna mb ga<br>
+
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+
+                                                currently the same as the miniboss start command<br>The layout of a giveaway is controlled by miniboss settings<br>
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                                               
                         
                     </div>
                 
@@ -479,7 +619,7 @@
         {
             &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-circle-question&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;start&#34;,&#34;help&#34;,&#34;ping&#34;,&#34;info&#34;,&#34;support&#34;,&#34;profile&#34;,&#34;update&#34;,&#34;statistics&#34;,&#34;quickpoll&#34;,&#34;emojilist&#34;]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-coins&#39;&gt;&lt;/i&gt;&amp;nbsp; Miniboss Commands&#34;,&#34;commands&#34;:[]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-coins&#39;&gt;&lt;/i&gt;&amp;nbsp; Miniboss Commands&#34;,&#34;commands&#34;:[&#34;miniboss&#34;,&#34;miniboss_settings&#34;,&#34;miniboss_bans&#34;,&#34;miniboss_start&#34;,&#34;miniboss_giveaway&#34;]
         },{
             &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Portal Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]
         },{
