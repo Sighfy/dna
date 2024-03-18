@@ -97,7 +97,7 @@
                     
                         <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-coins"></i>&nbsp; Miniboss Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; Portal Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-map"></i></i>&nbsp;&nbsp; Portal Commands</button>
                     
                         <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Timezone Commands</button>
                         
@@ -495,19 +495,118 @@
                     <div class="commands-section" id="Category2">
                         
                             
-                            <div class="accordion accordion-flush mt-2" id="leaderboard">
+                            <div class="accordion accordion-flush mt-2" id="portals">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fleaderboard">
-                                             /leaderboard&nbsp; <span class="command-description">- Get your servers leaderboards </span>
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals">
+                                            portals&nbsp; <span class="command-description">- Show a submenu to use any of the portal commands</span>
                                         </button>
                                     </h2>
-                                    <div id="fleaderboard" class="accordion-collapse collapse" data-bs-parent="#leaderboard">
+                                    <div id="fportals" class="accordion-collapse collapse" data-bs-parent="#portals">
                                         <div class="accordion-body">
+                                            <span>Alias:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    portal, pt<br>
+                                                
+                                            </span>
                                             <span>Usage:</span> <br />
                                             <span class="examples">
                                                 
-                                                    /leaderboard
+                                                    dna pt<br>
+                                                
+                                            </span>
+                                            <span>Note:</span> <br />
+                                        <span class="examples">
+
+                                                Depending on settings, this command can also display your portals instead of a submenu.<br>Using /portals view is the default way to view your portals.<br>
+
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush mt-2" id="portals_settings">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_settings">
+                                            /portals settings&nbsp; <span class="command-description">- Manage portal settings</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fportals_settings" class="accordion-collapse collapse" data-bs-parent="#portals_settings">
+                                        <div class="accordion-body">
+                                            <span>Alias:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    setting, st, set<br>
+                                                
+                                            </span>
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    dna pt st<br>/portals settings<br>
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush mt-2" id="portals_edit">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_edit">
+                                            /portals edit&nbsp; <span class="command-description">- Reassign a channel to a different tag</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fportals_edit" class="accordion-collapse collapse" data-bs-parent="#portals_edit">
+                                        <div class="accordion-body">
+                                            <span>Alias:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    e<br>
+                                                
+                                            </span>
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    dna pt e &lt;channel&gt; &lt;tag&gt;<br>/portals edit channels: &lt;channels&gt; tag: &lt;tag&gt;<br>
+                                                
+                                            </span>
+                                            <span>Note:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    All arguments are optional, meaning that simply using "dna pt e" will bring a submenu on what to edit<br>The channel can be a url, channel id, or letter id<br>
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush mt-2" id="portals_add">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_add">
+                                            /portals add&nbsp; <span class="command-description">- Add a portal to the default list</span>
+                                        </button>
+                                    </h2>
+                                    <div id="fportals_add" class="accordion-collapse collapse" data-bs-parent="#portals_add">
+                                        <div class="accordion-body">
+                                            <span>Alias:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    a<br>
+                                                
+                                            </span>
+                                            <span>Usage:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    dna pt a &lt;channel&gt;<br>/portals add channel: &lt;channel&gt;<br>
+                                                
+                                            </span>
+                                            <span>Note:</span> <br />
+                                            <span class="examples">
+                                                
+                                                    All arguments are optional, meaning that simply using "dna pt a" will bring a submenu on a channel to add. This is restricted to only channels within the server. To add channels in other servers, fill in the channel.<br>The &lt;channel&gt; can be a channel id, url, letter id, or normal #mention<br>
                                                 
                                             </span>
                                         </div>
@@ -521,25 +620,7 @@
                     <div class="commands-section" id="Category3">
                         
                             
-                            <div class="accordion accordion-flush mt-2" id="reactionrole">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#freactionrole">
-                                            <span class='badge badge-vip rounded-pill'><i class='fa-solid fa-crown'></i></span>&nbsp; /reactionrole&nbsp; <span class="command-description">- create a new reaction role</span>
-                                        </button>
-                                    </h2>
-                                    <div id="freactionrole" class="accordion-collapse collapse" data-bs-parent="#reactionrole">
-                                        <div class="accordion-body">
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    /reactionrole
-                                                
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         
                     </div>
 
@@ -547,25 +628,7 @@
                     <div class="commands-section" id="Category4">
                         
                             
-                        <div class="accordion accordion-flush mt-2" id="reactionrole">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#freactionrole">
-                                        <span class='badge badge-vip rounded-pill'><i class='fa-solid fa-crown'></i></span>&nbsp; /reactionrole&nbsp; <span class="command-description">- create a new reaction role</span>
-                                    </button>
-                                </h2>
-                                <div id="freactionrole" class="accordion-collapse collapse" data-bs-parent="#reactionrole">
-                                    <div class="accordion-body">
-                                        <span>Usage:</span> <br />
-                                        <span class="examples">
-                                            
-                                                /reactionrole
-                                            
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                     </div>
             </div>
@@ -621,11 +684,11 @@
         },{
             &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-coins&#39;&gt;&lt;/i&gt;&amp;nbsp; Miniboss Commands&#34;,&#34;commands&#34;:[&#34;miniboss&#34;,&#34;miniboss_settings&#34;,&#34;miniboss_bans&#34;,&#34;miniboss_start&#34;,&#34;miniboss_giveaway&#34;]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Portal Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-map&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Portal Commands&#34;,&#34;commands&#34;:[&#34;portals&#34;,&#34;portals_settings&#34;,&#34;portals_edit&#34;,&#34;portals_add&#34;,&#34;portals_remove&#34;,&#34;portals_view&#34;,&#34;portals_server&#34;]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Timezone Commands&#34;,&#34;commands&#34;:[&#34;reactionrole&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Timezone Commands&#34;,&#34;commands&#34;:[]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Config Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Config Commands&#34;,&#34;commands&#34;:[]
         }]" hidden />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/fontawesome/all.min.js"></script>
