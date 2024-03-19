@@ -93,281 +93,237 @@
                     <hr />
                     <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-bars"></i>&nbsp; All Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-circle-question"></i>&nbsp; General Commands</button>
+                    <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-dna"></i></i>&nbsp; General Commands</button>
+                
+                    <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-coins"></i>&nbsp; Miniboss Commands</button>
+                
+                    <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-map"></i></i>&nbsp;&nbsp; Portal Commands</button>
+                
+                    <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp; Timezone Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-coins"></i>&nbsp; Miniboss Commands</button>
-                    
-                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-map"></i></i>&nbsp;&nbsp; Portal Commands</button>
-                    
-                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp; Timezone Commands</button>
-                        
-                        <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp; Config Commands</button>
+                    <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp; Config Commands</button>
                     
                 </div>
             </div>
             <div class="col-md-8 my-2">
                 <input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" />
-                
-                    
-                        <div class="mt-4"></div>
-                    
+                    <div class="mt-4"></div>
+
                     <div class="commands-section" id="Category0">
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="start">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fstart">
-                                             /start&nbsp; <span class="command-description">- Explain the basics of how to use DNA
-                                            </span>
-                                        </button>
-                                    </h2>
-                                    <div id="fstart" class="accordion-collapse collapse" data-bs-parent="#start">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    register<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna start<br>/start<br>
-                                                
-                                            </span>
-                                        </div>
+                        <div class="accordion accordion-flush mt-2" id="start">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fstart">
+                                            /start&nbsp; <span class="command-description">- Explain the basics of how to use DNA
+                                        </span>
+                                    </button>
+                                </h2>
+                                <div id="fstart" class="accordion-collapse collapse" data-bs-parent="#start">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            register<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna start<br>/start<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="help">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
-                                             help&nbsp; <span class="command-description">- Bot&#39;s help menu</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    h, ?<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna help &lt;command&gt;
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="help">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
+                                        help&nbsp; <span class="command-description">- Bot&#39;s help menu</span>
+                                    </button>
+                                </h2>
+                                <div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">                                            
+                                            h, ?<br>                                            
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">                                            
+                                            dna help &lt;command&gt;                                            
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="ping">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fping">
-                                             /ping&nbsp; <span class="command-description">- Get bot&#39;s host server status &amp; latency</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fping" class="accordion-collapse collapse" data-bs-parent="#ping">
-                                        <div class="accordion-body">
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna ping<br>/ping<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="ping">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fping">
+                                        /ping&nbsp; <span class="command-description">- Get bot&#39;s host server status &amp; latency</span>
+                                    </button>
+                                </h2>
+                                <div id="fping" class="accordion-collapse collapse" data-bs-parent="#ping">
+                                    <div class="accordion-body">
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna ping<br>/ping<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="info">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#finfo">
-                                             /info&nbsp; <span class="command-description">- Show information on the bot</span>
-                                        </button>
-                                    </h2>
-                                    <div id="finfo" class="accordion-collapse collapse" data-bs-parent="#info">
-                                        <div class="accordion-body">
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                dna info<br>/info<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="info">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#finfo">
+                                        /info&nbsp; <span class="command-description">- Show information on the bot</span>
+                                    </button>
+                                </h2>
+                                <div id="finfo" class="accordion-collapse collapse" data-bs-parent="#info">
+                                    <div class="accordion-body">
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna info<br>/info<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="support">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsupport">
-                                             /support&nbsp; <span class="command-description">- Show the support links</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fsupport" class="accordion-collapse collapse" data-bs-parent="#support">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    bug<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna bug<br>/support<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="support">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsupport">
+                                        /support&nbsp; <span class="command-description">- Show the support links</span>
+                                    </button>
+                                </h2>
+                                <div id="fsupport" class="accordion-collapse collapse" data-bs-parent="#support">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            bug<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna bug<br>/support<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="profile">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fprofile">
-                                             profile&nbsp; <span class="command-description">- Display your DNA profile</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fprofile" class="accordion-collapse collapse" data-bs-parent="#profile">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    p<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna p<br>/profile<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="profile">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fprofile">
+                                        profile&nbsp; <span class="command-description">- Display your DNA profile</span>
+                                    </button>
+                                </h2>
+                                <div id="fprofile" class="accordion-collapse collapse" data-bs-parent="#profile">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            p<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna p<br>/profile<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="update">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fupdate">
-                                             /update&nbsp; <span class="command-description">- Update your profile using your ERPG profile</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fupdate" class="accordion-collapse collapse" data-bs-parent="#update">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    up<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna up<br>/update<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="update">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fupdate">
+                                        /update&nbsp; <span class="command-description">- Update your profile using your ERPG profile</span>
+                                    </button>
+                                </h2>
+                                <div id="fupdate" class="accordion-collapse collapse" data-bs-parent="#update">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            up<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna up<br>/update<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="statistics">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fstatistics">
-                                             /statistics&nbsp; <span class="command-description">- Show a pie graph about the server's members</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fstatistics" class="accordion-collapse collapse" data-bs-parent="#statistics">
-                                        <div class="accordion-body">
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna statistics<br>/statistics<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="statistics">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fstatistics">
+                                        /statistics&nbsp; <span class="command-description">- Show a pie graph about the server's members</span>
+                                    </button>
+                                </h2>
+                                <div id="fstatistics" class="accordion-collapse collapse" data-bs-parent="#statistics">
+                                    <div class="accordion-body">
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna statistics<br>/statistics<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="quickpoll">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fquickpoll">
-                                             /quickpoll&nbsp; <span class="command-description">- creates a "quick" and dirty poll</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fquickpoll" class="accordion-collapse collapse" data-bs-parent="#quickpoll">
-                                        <div class="accordion-body">
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                dna quickpoll &lt;your question&gt;<br>/quickpoll question: &lt;your poll question&gt;<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="quickpoll">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fquickpoll">
+                                        /quickpoll&nbsp; <span class="command-description">- creates a "quick" and dirty poll</span>
+                                    </button>
+                                </h2>
+                                <div id="fquickpoll" class="accordion-collapse collapse" data-bs-parent="#quickpoll">
+                                    <div class="accordion-body">
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna quickpoll &lt;your question&gt;<br>/quickpoll question: &lt;your poll question&gt;<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="emojilist">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#femojilist">
-                                             /emojilist&nbsp; <span class="command-description">- Show all custom emojis in the server</span>
-                                        </button>
-                                    </h2>
-                                    <div id="femojilist" class="accordion-collapse collapse" data-bs-parent="#emojilist">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    el<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna el<br>/emojilist<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="emojilist">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#femojilist">
+                                        /emojilist&nbsp; <span class="command-description">- Show all custom emojis in the server</span>
+                                    </button>
+                                </h2>
+                                <div id="femojilist" class="accordion-collapse collapse" data-bs-parent="#emojilist">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">                                            
+                                            el<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna el<br>/emojilist<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            
+                        </div>
                     </div>
                 
-                    
                     <div class="commands-section" id="Category1">
-
-
                         <div class="accordion accordion-flush mt-2" id="miniboss">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss">
-                                         miniboss&nbsp; <span class="command-description">- Show a submenu to use any of the miniboss commands</span>
+                                        miniboss&nbsp; <span class="command-description">- Show a submenu to use any of the miniboss commands</span>
                                     </button>
                                 </h2>
                                 <div id="fminiboss" class="accordion-collapse collapse" data-bs-parent="#miniboss">
                                     <div class="accordion-body">
                                         <span>Alias:</span> <br />
                                         <span class="examples">
-                                            
-                                                mb<br>
-                                            
+                                            mb<br>
                                         </span>
                                         <span>Usage:</span> <br />
                                         <span class="examples">
-                                            
-                                                dna mb<br>
-                                            
+                                            dna mb<br>
                                         </span>
                                     </div>
                                 </div>
@@ -377,22 +333,18 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss_settings">
-                                         miniboss settings&nbsp; <span class="command-description">- Manage miniboss settings</span>
+                                        miniboss settings&nbsp; <span class="command-description">- Manage miniboss settings</span>
                                     </button>
                                 </h2>
                                 <div id="fminiboss_settings" class="accordion-collapse collapse" data-bs-parent="#miniboss_settings">
                                     <div class="accordion-body">
                                         <span>Alias:</span> <br />
                                         <span class="examples">
-
-                                                setting, st, set<br>
-
+                                            setting, st, set<br>
                                         </span>
                                         <span>Usage:</span> <br />
                                         <span class="examples">
-
-                                                dna mb st<br>
-
+                                            dna mb st<br>
                                         </span>
                                     </div>
                                 </div>
@@ -402,22 +354,18 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss_bans">
-                                         miniboss bans&nbsp; <span class="command-description">- Manage miniboss bans</span>
+                                        miniboss bans&nbsp; <span class="command-description">- Manage miniboss bans</span>
                                     </button>
                                 </h2>
                                 <div id="fminiboss_bans" class="accordion-collapse collapse" data-bs-parent="#miniboss_bans">
                                     <div class="accordion-body">
                                         <span>Alias:</span> <br />
                                         <span class="examples">
-
-                                                ban, b<br>
-
+                                            ban, b<br>
                                         </span>
                                         <span>Usage:</span> <br />
                                         <span class="examples">
-
-                                                dna mb ban<br>
-
+                                            dna mb ban<br>
                                         </span>
                                     </div>
                                 </div>
@@ -434,21 +382,15 @@
                                     <div class="accordion-body">
                                         <span>Alias:</span> <br />
                                         <span class="examples">
-
-                                                s<br>
-
+                                            s<br>
                                         </span>
                                         <span>Usage:</span> <br />
                                         <span class="examples">
-
-                                                dna mb start<br>
-
+                                            dna mb start<br>
                                         </span>
                                         <span>Note:</span> <br />
                                         <span class="examples">
-
-                                                currently the same as a miniboss giveaway<br>
-
+                                            currently the same as a miniboss giveaway<br>
                                         </span>
                                     </div>
                                 </div>
@@ -458,261 +400,204 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fminiboss_giveaway">
-                                         miniboss giveaway&nbsp; <span class="command-description">- Start a boosted miniboss giveaway</span>
+                                        miniboss giveaway&nbsp; <span class="command-description">- Start a boosted miniboss giveaway</span>
                                     </button>
                                 </h2>
                                 <div id="fminiboss_giveaway" class="accordion-collapse collapse" data-bs-parent="#miniboss_giveaway">
                                     <div class="accordion-body">
                                         <span>Alias:</span> <br />
                                         <span class="examples">
-
-                                                g, ga<br>
-
+                                            g, ga<br>
                                         </span>
                                         <span>Usage:</span> <br />
                                         <span class="examples">
-
-                                                dna mb ga<br>
-
+                                            dna mb ga<br>
                                         </span>
                                         <span>Note:</span> <br />
                                         <span class="examples">
-
-                                                currently the same as the miniboss start command<br>The layout of a giveaway is controlled by miniboss settings<br>
-
+                                            currently the same as the miniboss start command<br>The layout of a giveaway is controlled by miniboss settings<br>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-
-                                               
-                        
                     </div>
                 
-                    
                     <div class="commands-section" id="Category2">
-                        
-                            
-                            <div class="accordion accordion-flush mt-2" id="portals">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals">
-                                            portals&nbsp; <span class="command-description">- Show a submenu to use any of the portal commands</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fportals" class="accordion-collapse collapse" data-bs-parent="#portals">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    portal, pt<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna pt<br>
-                                                
-                                            </span>
-                                            <span>Note:</span> <br />
-                                            <span class="examples">
-
-                                                    Depending on settings, this command can also display your portals instead of a submenu.<br>Using /portals view is the default way to view your portals.<br>
-
-                                            </span>
-                                        </div>
+                        <div class="accordion accordion-flush mt-2" id="portals">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals">
+                                        portals&nbsp; <span class="command-description">- Show a submenu to use any of the portal commands</span>
+                                    </button>
+                                </h2>
+                                <div id="fportals" class="accordion-collapse collapse" data-bs-parent="#portals">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            portal, pt<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna pt<br>
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+                                            Depending on settings, this command can also display your portals instead of a submenu.<br>Using /portals view is the default way to view your portals.<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="portals_settings">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_settings">
-                                            /portals settings&nbsp; <span class="command-description">- Manage portal settings</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fportals_settings" class="accordion-collapse collapse" data-bs-parent="#portals_settings">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    setting, st, set<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna pt st<br>/portals settings<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="portals_settings">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_settings">
+                                        /portals settings&nbsp; <span class="command-description">- Manage portal settings</span>
+                                    </button>
+                                </h2>
+                                <div id="fportals_settings" class="accordion-collapse collapse" data-bs-parent="#portals_settings">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            setting, st, set<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna pt st<br>/portals settings<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="portals_edit">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_edit">
-                                            /portals edit&nbsp; <span class="command-description">- Reassign a channel to a different tag</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fportals_edit" class="accordion-collapse collapse" data-bs-parent="#portals_edit">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    e<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna pt e &lt;channel&gt; &lt;tag&gt;<br>/portals edit channels: &lt;channels&gt; tag: &lt;tag&gt;<br>
-                                                
-                                            </span>
-                                            <span>Note:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    All arguments are optional, meaning that simply using "dna pt e" will bring a submenu on what to edit<br>The channel can be a url, channel id, or letter id<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="portals_edit">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_edit">
+                                        /portals edit&nbsp; <span class="command-description">- Reassign a channel to a different tag</span>
+                                    </button>
+                                </h2>
+                                <div id="fportals_edit" class="accordion-collapse collapse" data-bs-parent="#portals_edit">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            e<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna pt e &lt;channel&gt; &lt;tag&gt;<br>/portals edit channels: &lt;channels&gt; tag: &lt;tag&gt;<br>
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+                                            All arguments are optional, meaning that simply using "dna pt e" will bring a submenu on what to edit<br>The channel can be a url, channel id, or letter id<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="portals_add">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_add">
-                                            /portals add&nbsp; <span class="command-description">- Add a portal to the default list</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fportals_add" class="accordion-collapse collapse" data-bs-parent="#portals_add">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    a<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna pt a &lt;channel&gt;<br>/portals add channel: &lt;channel&gt;<br>
-                                                
-                                            </span>
-                                            <span>Note:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    All arguments are optional, meaning that simply using "dna pt a" will bring a submenu on a channel to add. This is restricted to only channels within the server. To add channels in other servers, fill in the channel.<br>The &lt;channel&gt; can be a channel id, url, letter id, or normal #mention.<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="portals_add">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_add">
+                                        /portals add&nbsp; <span class="command-description">- Add a portal to the default list</span>
+                                    </button>
+                                </h2>
+                                <div id="fportals_add" class="accordion-collapse collapse" data-bs-parent="#portals_add">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            a<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna pt a &lt;channel&gt;<br>/portals add channel: &lt;channel&gt;<br>
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+                                            All arguments are optional, meaning that simply using "dna pt a" will bring a submenu on a channel to add. This is restricted to only channels within the server. To add channels in other servers, fill in the channel.<br>The &lt;channel&gt; can be a channel id, url, letter id, or normal #mention.<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="portals_remove">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_remove">
-                                            /portals remove&nbsp; <span class="command-description">- Remove a channel from the list</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fportals_remove" class="accordion-collapse collapse" data-bs-parent="#portals_remove">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    r<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna pt r &lt;channel&gt;<br>/portals remove channel: &lt;channel&gt;<br>
-                                                
-                                            </span>
-                                            <span>Note:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    All arguments are optional, meaning that simply using "dna pt r" will bring a submenu on a channel to add. Unlike add, remove has no restrictions on it's ui use.<br>The &lt;channel&gt; can be a channel id, url, letter id, or normal #mention.<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="portals_remove">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_remove">
+                                        /portals remove&nbsp; <span class="command-description">- Remove a channel from the list</span>
+                                    </button>
+                                </h2>
+                                <div id="fportals_remove" class="accordion-collapse collapse" data-bs-parent="#portals_remove">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            r<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna pt r &lt;channel&gt;<br>/portals remove channel: &lt;channel&gt;<br>
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+                                            All arguments are optional, meaning that simply using "dna pt r" will bring a submenu on a channel to add. Unlike add, remove has no restrictions on it's ui use.<br>The &lt;channel&gt; can be a channel id, url, letter id, or normal #mention.<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="portals_view">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_view">
-                                            /portals view&nbsp; <span class="command-description">- View your portals</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fportals_view" class="accordion-collapse collapse" data-bs-parent="#portals_view">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    v<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna pt v<br>/portals view<br>
-                                                
-                                            </span>
-                                            <span>Note:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    This is the default view command that "dna pt" will use when the command is not set to show a submenu. This portals view commands settings are controlled by "portal settings".<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="portals_view">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_view">
+                                        /portals view&nbsp; <span class="command-description">- View your portals</span>
+                                    </button>
+                                </h2>
+                                <div id="fportals_view" class="accordion-collapse collapse" data-bs-parent="#portals_view">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            v<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna pt v<br>/portals view<br>
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+                                            This is the default view command that "dna pt" will use when the command is not set to show a submenu. This portals view commands settings are controlled by "portal settings".<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion accordion-flush mt-2" id="portals_server">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingOne">
-                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_server">
-                                            /portals server&nbsp; <span class="command-description">- Show the guilds portals</span>
-                                        </button>
-                                    </h2>
-                                    <div id="fportals_server" class="accordion-collapse collapse" data-bs-parent="#portals_server">
-                                        <div class="accordion-body">
-                                            <span>Alias:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    sv, guild, g<br>
-                                                
-                                            </span>
-                                            <span>Usage:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    dna pt g<br>/portals server<br>
-                                                
-                                            </span>
-                                            <span>Note:</span> <br />
-                                            <span class="examples">
-                                                
-                                                    This command will display the current servers portals<br>The use of this command is controlled by the settings set in the server-config command by a server admin or authorized user.<br>
-                                                
-                                            </span>
-                                        </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="portals_server">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fportals_server">
+                                        /portals server&nbsp; <span class="command-description">- Show the guilds portals</span>
+                                    </button>
+                                </h2>
+                                <div id="fportals_server" class="accordion-collapse collapse" data-bs-parent="#portals_server">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            sv, guild, g<br>
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna pt g<br>/portals server<br>
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+                                            This command will display the current servers portals<br>The use of this command is controlled by the settings set in the server-config command by a server admin or authorized user.<br>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                        
+                        </div>
                     </div>
                 
-                    
                     <div class="commands-section" id="Category3">
-                        
-                            
                         <div class="accordion accordion-flush mt-2" id="timezone">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
@@ -723,22 +608,16 @@
                                 <div id="ftimezone" class="accordion-collapse collapse" data-bs-parent="#timezone">
                                     <div class="accordion-body">
                                         <span>Alias:</span> <br />
-                                        <span class="examples">
-                                            
-                                                tz<br>
-                                            
+                                        <span class="examples">                                            
+                                            tz<br>                                            
                                         </span>
                                         <span>Usage:</span> <br />
-                                        <span class="examples">
-                                            
-                                                dna tz<br>
-                                            
+                                        <span class="examples">                                            
+                                            dna tz<br>                                            
                                         </span>
                                         <span>Note:</span> <br />
                                         <span class="examples">
-
-                                                The set timezone will be used throughout the bot to display times in your chosen utc offset. Some examples: miniboss bans, server config logging, etc<br>
-
+                                            The set timezone will be used throughout the bot to display times in your chosen utc offset. Some examples: miniboss bans, server config logging, etc<br>
                                         </span>
                                     </div>
                                 </div>
@@ -754,16 +633,12 @@
                                 <div id="ftimezone_set" class="accordion-collapse collapse" data-bs-parent="#timezone_set">
                                     <div class="accordion-body">
                                         <span>Usage:</span> <br />
-                                        <span class="examples">
-                                            
-                                                dna tz set &lt;utc offset&gt;<br>
-                                            
+                                        <span class="examples">                                            
+                                            dna tz set &lt;utc offset&gt;<br>                                            
                                         </span>
                                         <span>Note:</span> <br />
                                         <span class="examples">
-
-                                                The &lt;utc offset&gt; will be a number between -12 and +14. Currently only whole numbers are supported.<br>
-
+                                            The &lt;utc offset&gt; will be a number between -12 and +14. Currently only whole numbers are supported.<br>
                                         </span>
                                     </div>
                                 </div>
@@ -779,30 +654,45 @@
                                 <div id="ftimezone_get" class="accordion-collapse collapse" data-bs-parent="#timezone_get">
                                     <div class="accordion-body">
                                         <span>Usage:</span> <br />
-                                        <span class="examples">
-                                            
-                                                dna tz get &lt;member&gt;<br>
-                                            
+                                        <span class="examples">                                            
+                                            dna tz get &lt;member&gt;<br>                                            
                                         </span>
                                         <span>Note:</span> <br />
                                         <span class="examples">
-
-                                                The &lt;member&gt; will be another user of DNA who has a timezone set.<br>
-
+                                            The &lt;member&gt; will be another user of DNA who has a timezone set.<br>
                                         </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                            
-                            
-                        
                     </div>
 
-
                     <div class="commands-section" id="Category4">
-                        
+                        <div class="accordion accordion-flush mt-2" id="server_config">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fserver_config">
+                                        server config&nbsp; <span class="command-description">- Your servers admin panel</span>
+                                    </button>
+                                </h2>
+                                <div id="fserver_config" class="accordion-collapse collapse" data-bs-parent="#server_config">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">                                            
+                                            sc, config-server, cs<br>                                            
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">                                            
+                                            dna sc<br>                                            
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+                                            By default only admins can access this command.<br>To allow access to another, use the admin settings in the command to set an authorized role<br>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                             
                         
 
@@ -856,7 +746,7 @@
     
     <input id="commands" value="[
         {
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-circle-question&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;start&#34;,&#34;help&#34;,&#34;ping&#34;,&#34;info&#34;,&#34;support&#34;,&#34;profile&#34;,&#34;update&#34;,&#34;statistics&#34;,&#34;quickpoll&#34;,&#34;emojilist&#34;]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-dna&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;start&#34;,&#34;help&#34;,&#34;ping&#34;,&#34;info&#34;,&#34;support&#34;,&#34;profile&#34;,&#34;update&#34;,&#34;statistics&#34;,&#34;quickpoll&#34;,&#34;emojilist&#34;]
         },{
             &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-coins&#39;&gt;&lt;/i&gt;&amp;nbsp; Miniboss Commands&#34;,&#34;commands&#34;:[&#34;miniboss&#34;,&#34;miniboss_settings&#34;,&#34;miniboss_bans&#34;,&#34;miniboss_start&#34;,&#34;miniboss_giveaway&#34;]
         },{
@@ -864,7 +754,7 @@
         },{
             &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-globe&#39;&gt;&lt;/i&gt;&amp;nbsp; Timezone Commands&#34;,&#34;commands&#34;:[&#34;timezone&#34;,&#34;timezone_set&#34;,&#34;timezone_get&#34;]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-gear&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Config Commands&#34;,&#34;commands&#34;:[]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-gear&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Config Commands&#34;,&#34;commands&#34;:[&#34;server_config&#34;]
         }]" hidden />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/fontawesome/all.min.js"></script>
