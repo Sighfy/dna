@@ -156,7 +156,7 @@ nav.nav-w {
 .line2 {
   background: #00d1b2;
   background: #00d1b2;
-  width: 75px;
+  width: 350px;
   height: 5px;
 }
 
@@ -165,6 +165,10 @@ nav.nav-w {
 }
 
 .line.blurple {
+  background: #7289da;
+}
+
+.line2.blurple {
   background: #7289da;
 }
 
