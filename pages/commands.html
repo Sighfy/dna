@@ -99,9 +99,9 @@
                     
                         <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-map"></i></i>&nbsp;&nbsp; Portal Commands</button>
                     
-                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Timezone Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp; Timezone Commands</button>
                         
-                        <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Config Commands</button>
+                        <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp; Config Commands</button>
                     
                 </div>
             </div>
@@ -517,11 +517,11 @@
                                                 
                                             </span>
                                             <span>Note:</span> <br />
-                                        <span class="examples">
+                                            <span class="examples">
 
-                                                Depending on settings, this command can also display your portals instead of a submenu.<br>Using /portals view is the default way to view your portals.<br>
+                                                    Depending on settings, this command can also display your portals instead of a submenu.<br>Using /portals view is the default way to view your portals.<br>
 
-                                        </span>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -713,6 +713,89 @@
                     <div class="commands-section" id="Category3">
                         
                             
+                        <div class="accordion accordion-flush mt-2" id="timezone">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ftimezone">
+                                        timezone&nbsp; <span class="command-description">- Submenu to use the timezone commands</span>
+                                    </button>
+                                </h2>
+                                <div id="ftimezone" class="accordion-collapse collapse" data-bs-parent="#timezone">
+                                    <div class="accordion-body">
+                                        <span>Alias:</span> <br />
+                                        <span class="examples">
+                                            
+                                                tz<br>
+                                            
+                                        </span>
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            
+                                                dna tz<br>
+                                            
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+
+                                                The set timezone will be used throughout the bot to display times in your chosen utc offset. Some examples: miniboss bans, server config logging, etc<br>
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="timezone_set">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ftimezone_set">
+                                        timezone set&nbsp; <span class="command-description">- Set your timezone offset</span>
+                                    </button>
+                                </h2>
+                                <div id="ftimezone_set" class="accordion-collapse collapse" data-bs-parent="#timezone_set">
+                                    <div class="accordion-body">
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            
+                                                dna tz set &lt;utc offset&gt;<br>
+                                            
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+
+                                                The &lt;utc offset&gt; will be a number between -12 and +14. Currently only whole numbers are supported.<br>
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="timezone_get">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#ftimezone_get">
+                                        timezoneget&nbsp; <span class="command-description">- Get your current time and utc offset</span>
+                                    </button>
+                                </h2>
+                                <div id="ftimezone_get" class="accordion-collapse collapse" data-bs-parent="#timezone_get">
+                                    <div class="accordion-body">
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            
+                                                dna tz get &lt;member&gt;<br>
+                                            
+                                        </span>
+                                        <span>Note:</span> <br />
+                                        <span class="examples">
+
+                                                The &lt;member&gt; will be another user of DNA who has a timezone set.<br>
+
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            
                             
                         
                     </div>
@@ -779,9 +862,9 @@
         },{
             &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-map&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Portal Commands&#34;,&#34;commands&#34;:[&#34;portals&#34;,&#34;portals_settings&#34;,&#34;portals_edit&#34;,&#34;portals_add&#34;,&#34;portals_remove&#34;,&#34;portals_view&#34;,&#34;portals_server&#34;]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Timezone Commands&#34;,&#34;commands&#34;:[]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-globe&#39;&gt;&lt;/i&gt;&amp;nbsp; Timezone Commands&#34;,&#34;commands&#34;:[&#34;timezone&#34;,&#34;timezone_set&#34;,&#34;timezone_get&#34;]
         },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Config Commands&#34;,&#34;commands&#34;:[]
+            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-gear&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Config Commands&#34;,&#34;commands&#34;:[]
         }]" hidden />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/fontawesome/all.min.js"></script>
