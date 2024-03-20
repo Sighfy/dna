@@ -74,16 +74,16 @@ hr {
 }
 
 ::-webkit-scrollbar-track {
-	background: #212529;
+	background: #2A2041;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #4856ee;
+	background: #004F98;
 	border-radius: 30px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #3c48c5;
+	background: #004F98;
 }
 
 ::placeholder {
