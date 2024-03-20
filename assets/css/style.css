@@ -46,6 +46,11 @@ html {
   visibility: visible;
 }
 
+#bot-phrase {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
 .navbar-item,
 .navbar-link {
   -moz-transition: all 0.2s ease-in;

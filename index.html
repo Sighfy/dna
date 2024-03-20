@@ -111,7 +111,7 @@
           <div class="columns">
             <div class="column mr-6 mt-12" data-aos="fade-up">
               <p id="bot-phrase" class="title has-text-white has-text-weight-bold">
-                Revolutionize ERPG Discord communities with DNA
+                Revolutionize ERPG Discord with DNA
               </p>
               <p class="subtitle has-text-grey-lighter is-size-6 mt-3">
                 Welcome to DNA, the premier assistant for servers and players of the EPIC RPG Discord Bot. It's the first fully customizable solution tailored specifically for ERPG servers and players, offering extensive features and flexibility.
@@ -147,35 +147,37 @@
         ></a>
       </div>
     </section>
-    
+
     <script>
       // Array containing all five variations
       const phrases = [
+        "Revolutionize ERPG Discord with DNA",
         "Elevate ERPG Discord servers with DNA",
         "Empower ERPG Discord guilds with DNA",
         "Enhance ERPG Discord communities with DNA",
         "Innovate ERPG Discord servers with DNA"
       ];
-    
+
       let currentIndex = 0;
-    
-      // Function to display the current phrase
-      function displayCurrentPhrase() {
-        document.getElementById("bot-phrase").textContent = phrases[currentIndex];
+      const botPhrase = document.getElementById("bot-phrase");
+
+      // Function to smoothly fade out the current phrase and fade in the next phrase
+      function fadeOutAndIn() {
+        botPhrase.style.opacity = 0;
+        setTimeout(() => {
+          currentIndex = (currentIndex + 1) % phrases.length;
+          botPhrase.textContent = phrases[currentIndex];
+          botPhrase.style.opacity = 1;
+        }, 1000); // Duration of fade-out transition (in milliseconds)
       }
-    
-      // Function to scroll to the next phrase
-      function scrollToNextPhrase() {
-        currentIndex = (currentIndex + 1) % phrases.length;
-        displayCurrentPhrase();
-      }
-    
-      // Call the function to display the first phrase when the page loads
-      displayCurrentPhrase();
-    
-      // Set interval to scroll to the next phrase every 5 seconds
-      setInterval(scrollToNextPhrase, 5000);
-    </script>    
+
+      // Call the function to start the animation sequence after a short delay
+      setTimeout(() => {
+        fadeOutAndIn();
+        // Set interval to smoothly transition phrases every 5 seconds
+        setInterval(fadeOutAndIn, 5000);
+      }, 1000); // Delay before starting the animation sequence (in milliseconds)
+    </script>
     
     <!-- Hero Section End -->
 
