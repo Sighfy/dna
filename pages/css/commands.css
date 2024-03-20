@@ -1,3 +1,5 @@
+/*https://coolors.co/1d1128-2a2041-36295b-423175-5941a9-6852b1-8270be*/
+
 * {
 	padding: 0;
 	margin: 0;
@@ -5,11 +7,11 @@
 }
 :root {
 	--description-color: rgb(207, 207, 207);
-	--main-color: #4856ee;
+	--main-color: #5941A9;
 	--secondary-color: #626ffd;
 	--discord-color: #5865f2;
-	--background-main-color: #212529;
-	--card-background: #2a2d31;
+	--background-main-color: #1D1128;
+	--card-background: #36295B;
 }
 
 .badge-vip{
@@ -22,13 +24,20 @@ body {
 	color: #ffffff;
 	letter-spacing: 0.5px;
 }
-
 nav {
 	animation: topToDown 1.5s ease-in;
 }
 
 .active {
 	text-decoration: underline;
+}
+
+.dropdown-item:hover {
+	background-color: #423175;
+  }
+
+.custom-navbar {
+	background-color: #2a2041;
 }
 
 .navbar-logo {
@@ -81,17 +90,11 @@ nav {
 	color: #b1b1b1;
 }
 .active-btn {
-	background-color: #3f4cd8;
+	background-color: #5941A9;
 	color: #ffffff;
 }
 .btn-premium:hover {
 	opacity: 1;
-}
-.ttt {
-	font-size: 22px;
-}
-.fa-globe-stand {
-	color: rgb(112, 209, 66);
 }
 .close-tip {
 	position: absolute;
@@ -103,10 +106,16 @@ nav {
 	color: #ffffff;
 	background-color: rgb(248, 68, 68);
 }
-
+.btn-primary.active {
+    background-color: #6852B1;
+    border-color: #6852B1;
+}
+.btn-primary.active:focus {
+	box-shadow: 0 0 0 0.25rem #5941A9;
+}
 .btn-primary:hover {
-	background-color: #121b2c;
-	border: 1px solid #121b2c;
+	background-color: #5941A9;
+	border: 1px solid #5941A9;
 }
 .premium-tag {
 	background: linear-gradient(90deg, #3f4cd8 0%, #5773cf 100%);
@@ -125,13 +134,13 @@ hr {
 }
 
 .search-box {
-	background-color: #2f2f30;
+	background-color: #423175;
 	outline: none;
 	border: none;
 	border-radius: 20px;
 	color: #ffffff;
 	padding: 10px 22px;
-	border: 2px solid #2f2f30;
+	border: 2px solid #423175;
 }
 
 .search-box:focus {
@@ -143,13 +152,13 @@ hr {
 	border-radius: 8px !important;
 }
 .accordion-button {
-	background-color: #2f2f30 !important;
+	background-color: #423175 !important;
 	color: #ffffff !important;
 	border-radius: 8px !important;
 }
 .accordion-button:focus,
 .accordion-button:active {
-	background-color: #212c42 !important;
+	background-color: #5941A9 !important;
 	color: #ffffff !important;
 }
 
