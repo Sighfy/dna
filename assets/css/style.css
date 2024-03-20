@@ -13,7 +13,7 @@ html {
 }
 
 .bg-base {
-  background-color: #1a2634 !important;
+  background-color: #2a2041 !important;
 }
 
 #backtotop {
@@ -94,7 +94,7 @@ html {
 
 nav,
 .navbar-menu {
-  background-color: #1a2634 !important;
+  background-color: #2a2041 !important;
 }
 
 .navbar-item.nav-dark,
@@ -149,7 +149,7 @@ nav.nav-w {
 .line {
   background: #00d1b2;
   background: #00d1b2;
-  width: 150px;
+  width: 175px;
   height: 5px;
 }
 
