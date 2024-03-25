@@ -20,11 +20,11 @@
 .icon-index {
     border: 1px solid #5941A9;
     padding: 5px;
-    border-radius: 10px; /* Adjust border-radius as needed for rounding */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start (left) of the box */
-    line-height: .5; /* Remove line height to eliminate extra space */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: .5;
 }
 
 .icon-index i {
@@ -88,10 +88,6 @@ nav {
 	font-size: 17px;
 	line-height: 1rem;
 	text-transform: uppercase;
-}
-
-.seconed-description {
-	color: var(--description-color);
 }
 
 .card {
@@ -185,13 +181,27 @@ hr {
 .accordion-button::after {
 	display: none;
 }
-.command-description {
+.icon-description {
 	color: #bdbdbd;
+}
+.command-title {
+    display: inline-block; /* Ensure it behaves like a block element */
+    width: auto; /* Allow the title to expand dynamically */
+    white-space: nowrap; /* Prevent wrapping */
+    vertical-align: middle; /* Align vertically with description */
+}
+.command-description {
+    color: #bdbdbd;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+.command-description::before {
+    content: " - "; /* Add a dash before the description */
+    margin-right: 5px; /* Add some space between the dash and text */
 }
 .examples {
 	color: #8b8b8b;
 }
-
 
 ::-webkit-scrollbar {
 	width: 10px;
