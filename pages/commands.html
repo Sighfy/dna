@@ -102,7 +102,7 @@
                 
                     <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp; Timezone Commands</button>
                     
-                    <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp; Config Commands</button>
+                    <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp; Server Configuration</button>
                     
                 </div>
             </div>
@@ -673,7 +673,7 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
                                     <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fserver_config">
-                                        server config&nbsp; <span class="command-description">- Your servers admin panel</span>
+                                        <span class='badge badge-vip rounded-pill'><i class='fa-solid fa-gear'></i></span>&nbsp; server config&nbsp; <span class="command-description">- Your servers admin panel</span>
                                     </button>
                                 </h2>
                                 <div id="fserver_config" class="accordion-collapse collapse" data-bs-parent="#server_config">
@@ -688,7 +688,61 @@
                                         </span>
                                         <span>Note:</span> <br />
                                         <span class="examples">
-                                            By default only admins can access this command.<br>To allow access to another, use the admin settings in the command to set an authorized role<br>
+                                            By default, only administrators have access to this command. To grant access to others, utilize the admin settings within the command to designate an authorized role.<br>
+                                            All items located in the server configuration tab, or identified by this icon: <span class='badge badge-vip rounded-pill'><i class='fa-solid fa-gear'></i></span>, are components of the server configuration command structure. They are not standalone commands."
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush mt-2" id="listeners">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flisteners">
+                                        <span class='badge badge-vip rounded-pill'><i class='fa-solid fa-gear'></i></span>&nbsp; listeners&nbsp; <span class="command-description">- Time Travel, Level, and Void listeners</span>
+                                    </button>
+                                </h2>
+                                <div id="flisteners" class="accordion-collapse collapse" data-bs-parent="#listeners">
+                                    <div class="accordion-body">
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">                                            
+                                            dna sc<br>                                            
+                                        </span>
+                                        <span>How to:</span> <br />
+                                        <span class="examples">                                            
+                                            <ul>
+                                                <li>To use a listener, use the server config command and navigate to the listeners section to configure.</li>
+                                                <li>To enable a listener, a channel with slowmode must be set.</li>
+                                                <li>Users have the ability to remove a given role or re-add that role without re-verifying within a 60-second timeout on the verification message.</li>
+                                            </ul>
+                                        </span>
+                                        <span>Time Travel</span> <br />
+                                        <span class="examples">                                            
+                                            Example usage: Time travel verification <br>
+                                            <ul>
+                                                <li>Manage up to 4 time travel configurations.</li>
+                                                <li>Each bracket supports up to 4 roles. Total of 16</li>
+                                                <li>Roles from previous settings are automatically removed during verification.</li>
+                                                <li>Recommended time travels: 0, 2, 20.</li>
+                                            </ul>
+                                        </span>
+
+                                        <span>Level</span> <br />
+                                        <span class="examples">                                            
+                                            Example usage: Auto miniboss host verification <br>
+                                            <ul>
+                                                <li>Manage up to 2 level configurations.</li>
+                                                <li>Each level supports up to 2 roles. Total of 4</li>
+                                                <li>Roles from previous settings are automatically removed during verification.</li>
+                                            </ul>                                 
+                                        </span>
+                                        <span>Void</span> <br />
+                                        <span class="examples">                                            
+                                            Example usage: Void area verification<br>
+                                            <ul>
+                                                <li>Manage a single void verification</li>
+                                                <li>Void verification checks a users shop for the existence of an "EPIC jump."</li>
+                                            </ul>                                          
                                         </span>
                                     </div>
                                 </div>
@@ -741,18 +795,61 @@
             </footer>
         </div>
     
-    <input id="commands" value="[
-        {
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-dna&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;start&#34;,&#34;help&#34;,&#34;ping&#34;,&#34;info&#34;,&#34;support&#34;,&#34;profile&#34;,&#34;update&#34;,&#34;statistics&#34;,&#34;quickpoll&#34;,&#34;emojilist&#34;]
-        },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-coins&#39;&gt;&lt;/i&gt;&amp;nbsp; Miniboss Commands&#34;,&#34;commands&#34;:[&#34;miniboss&#34;,&#34;miniboss_settings&#34;,&#34;miniboss_bans&#34;,&#34;miniboss_start&#34;,&#34;miniboss_giveaway&#34;]
-        },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-map&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Portal Commands&#34;,&#34;commands&#34;:[&#34;portals&#34;,&#34;portals_settings&#34;,&#34;portals_edit&#34;,&#34;portals_add&#34;,&#34;portals_remove&#34;,&#34;portals_view&#34;,&#34;portals_server&#34;]
-        },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-globe&#39;&gt;&lt;/i&gt;&amp;nbsp; Timezone Commands&#34;,&#34;commands&#34;:[&#34;timezone&#34;,&#34;timezone_set&#34;,&#34;timezone_get&#34;]
-        },{
-            &#34;title&#34;:&#34;&lt;i class=&#39;fa-solid fa-gear&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Config Commands&#34;,&#34;commands&#34;:[&#34;server_config&#34;]
-        }]" hidden />
+        <input id="commands" value="[
+            {
+                &#34;title&#34;: &#34;&lt;i class=&#39;fa-solid fa-dna&#39;&gt;&lt;/i&gt; General Commands&#34;,
+                &#34;commands&#34;: [
+                    &#34;start&#34;, 
+                    &#34;help&#34;, 
+                    &#34;ping&#34;, 
+                    &#34;info&#34;, 
+                    &#34;support&#34;, 
+                    &#34;profile&#34;, 
+                    &#34;update&#34;, 
+                    &#34;statistics&#34;, 
+                    &#34;quickpoll&#34;, 
+                    &#34;emojilist&#34;
+                ]
+            },
+            {
+                &#34;title&#34;: &#34;&lt;i class=&#39;fa-solid fa-coins&#39;&gt;&lt;/i&gt; Miniboss Commands&#34;,
+                &#34;commands&#34;: [
+                    &#34;miniboss&#34;, 
+                    &#34;miniboss_settings&#34;, 
+                    &#34;miniboss_bans&#34;, 
+                    &#34;miniboss_start&#34;, 
+                    &#34;miniboss_giveaway&#34;
+                ]
+            },
+            {
+                &#34;title&#34;: &#34;&lt;i class=&#39;fa-solid fa-map&#39;&gt;&lt;/i&gt; Portal Commands&#34;,
+                &#34;commands&#34;: [
+                    &#34;portals&#34;, 
+                    &#34;portals_settings&#34;, 
+                    &#34;portals_edit&#34;, 
+                    &#34;portals_add&#34;, 
+                    &#34;portals_remove&#34;, 
+                    &#34;portals_view&#34;, 
+                    &#34;portals_server&#34;
+                ]
+            },
+            {
+                &#34;title&#34;: &#34;&lt;i class=&#39;fa-solid fa-globe&#39;&gt;&lt;/i&gt; Timezone Commands&#34;,
+                &#34;commands&#34;: [
+                    &#34;timezone&#34;, 
+                    &#34;timezone_set&#34;, 
+                    &#34;timezone_get&#34;
+                ]
+            },
+            {
+                &#34;title&#34;: &#34;&lt;i class=&#39;fa-solid fa-gear&#39;&gt;&lt;/i&gt; Server Configuration&#34;,
+                &#34;commands&#34;: [
+                    &#34;server_config&#34;, 
+                    &#34;listeners&#34;
+                ]
+            }
+        ]" hidden />
+    
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/fontawesome/all.min.js"></script>
     <script src="/js/animation.js"></script>
