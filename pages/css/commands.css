@@ -17,6 +17,20 @@
 .badge-vip{
 	background-color: var(--main-color) !important;
 }
+.icon-index {
+    border: 1px solid #5941A9;
+    padding: 5px;
+    border-radius: 10px; /* Adjust border-radius as needed for rounding */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start (left) of the box */
+    line-height: .5; /* Remove line height to eliminate extra space */
+}
+
+.icon-index i {
+    font-size: 10px; /* Adjust size as needed */
+    line-height: initial; /* Restore line height for the icons */
+}
 
 body {
 	background: var(--background-main-color);
