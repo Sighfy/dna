@@ -69,8 +69,8 @@
         <section style="margin-top: 9%;">
             <div class="row">
                 <div class="col-sm-6 my-1">
-                    <h2 class="fw-bold">DNA Commands</h2>
-                    <p class="icon-description">Find all DNA bot commands and information you need fast and easy</p>
+                    <h2 class="fw-bold">Commands &<br>Server Configuration</h2>
+                    <!-- <p class="icon-description">Find DNA bot commands and server settings documentation.</p> -->
                 </div>
                 <div class="col-sm-6 my-1">
                     <!-- Right-side box for icon index -->
@@ -86,15 +86,6 @@
                         </div> -->
                         <!-- Add more icons as needed -->
                     </div>
-                   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4050940490843957" crossorigin="anonymous"></script>  -->
-                    <!-- banner -->
-                    <!-- <ins class="adsbygoogle"
-                         style="display:inline-block;width:100%;height:90px"
-                         data-ad-client="ca-pub-4050940490843957"
-                         data-ad-slot="6770580457"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script> -->
                 </div>
             </div>
             <hr>
@@ -103,7 +94,7 @@
         <div class="row">
             <div class="col-md-4 my-2">
                 <div class="card p-3">
-                    <h5>Select Commands Category</h5>
+                    <h5>Command Categories</h5>
                     <hr />
                     <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2 btn-icon-text">
                         <i class="fa-solid fa-bars"></i>
@@ -820,20 +811,39 @@
                                     <div class="accordion-body">
                                         <span>Usage:</span> <br />
                                         <span class="examples">
-                                            dna sc<br>
+                                            <ul><li>dna sc</li></ul>
                                         </span>
                                         <span>Functions:</span> <br />
                                         <span class="examples">
-                                            <ul>
-                                                <li>Command Active Status: [off/on] This controls if the commands [miniboss, miniboss start, miniboss giveaway] are enabled. When the command is enabled, only users who have the [host role] are able to use the command. </li>
-                                                <li>Ping Active Status</li>
-                                                <li>Custom Channels</li>
-                                                <li>Auto Unlock Channel</li>
-                                                <li>Allow Host Bans</li>
-                                                <li>Log Channel Status</li>
-                                                <li>Event Mode</li>
-                                            </ul>
+                                            <dl>
+                                                <dt>Command Active Status:</dt>
+                                                <dd>Enable and disable the commands [miniboss, miniboss start, miniboss giveaway].</dd>
+                                                <dd>When the command is enabled, only users who have the [host role] are able to use the command.</dd>
+
+                                                <dt>Ping Active Status:</dt>
+                                                <dd>Enable and disable the message to ping (@mention) the [ping role] at the start of a boosted miniboss.</dd>
+                                                <dd>This will use the role closest to the hosts saved level</dd>
+
+                                                <dt>Custom Channels:</dt>
+                                                <dd>Enabled and disable the use of the [start, end] channels.</dd>
+
+                                                <dt>Auto Unlock Channel:</dt>
+                                                <dd>Enable and disable the bot to auto unlock a channel.</dd>
+                                                <dd>This triggers after the ERPG bot displays the starting embed.</dd>
+                                                <dd>When enabled, the bot will reset users access to the channel at the conclusion of the boosted miniboss.</dd>
+
+                                                <dt>Allow Host Bans:</dt>
+                                                <dd>Gives the miniboss host the option to ban a user from the server by adding a server ban button on a bannable miniboss</dd>
+
+                                                <dt>Log Channel Status:</dt>
+                                                <dd>Enabled and disable the use of the [moderation, commands] log channels.</dd>
+
+                                                <dt>Event Mode:</dt>
+                                                <dd>By enabling even mode, the event ban length will take over as the default ban length</dd>
+
+                                            </dl>
                                         </span>
+
                                         <span>Channels:</span> <br />
                                         <span class="examples">
                                             <ul>

@@ -88,7 +88,6 @@ nav {
     margin-right: 8px; /* Adjust margin between icon and text */
 }
 
-
 .top-section {
 	margin-top: 13%;
 }
@@ -209,8 +208,28 @@ hr {
     content: " - "; /* Add a dash before the description */
     margin-right: 5px; /* Add some space between the dash and text */
 }
-.examples {
+
+.examples dl {
+	list-style-type: none; /* Remove default list style */
+	font-size: smaller; /* Adjust the font size to make it smaller */
+    list-style-type: none; /* Remove default list style */
+}
+
+.examples dt {
+    font-weight: normal; /* Remove bold styling */
+}
+
+.examples dd {
 	color: #8b8b8b;
+    margin-left: 0; /* Remove default left margin */
+    padding-left: 20px; /* Add padding for bullet point */
+    position: relative; /* Set position relative for positioning bullet point */
+}
+
+.examples dd::before {
+    content: "\2022"; /* Add bullet point using Unicode character */
+    position: absolute; /* Position bullet point */
+    left: 0; /* Align bullet point to the left */
 }
 
 ::-webkit-scrollbar {
