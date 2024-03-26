@@ -105,20 +105,38 @@
                 <div class="card p-3">
                     <h5>Select Commands Category</h5>
                     <hr />
-                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-bars"></i>&nbsp; All Commands</button>
+                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2 btn-icon-text">
+                        <i class="fa-solid fa-bars"></i>
+                        <span class="btn-text">All Commands</span>
+                    </button>
 
-                    <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-dna"></i></i>&nbsp; General Commands</button>
+                    <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2 btn-icon-text">
+                        <i class="fa-solid fa-dna"></i>
+                        <span class="btn-text">General Commands</span>
+                    </button>
 
-                    <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-coins"></i>&nbsp; Miniboss Commands</button>
+                    <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2 btn-icon-text">
+                        <i class="fa-solid fa-coins"></i>
+                        <span class="btn-text">Miniboss Commands</span>
+                    </button>
 
-                    <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-map"></i></i>&nbsp;&nbsp; Portal Commands</button>
+                    <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2 btn-icon-text">
+                        <i class="fa-solid fa-map"></i>
+                        <span class="btn-text">Portal Commands</span>
+                    </button>
 
-                    <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp; Timezone Commands</button>
+                    <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2 btn-icon-text">
+                        <i class="fa-solid fa-globe"></i>
+                        <span class="btn-text">Timezone Commands</span>
+                    </button>
 
-                    <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp; Server Configuration</button>
-
+                    <button onclick="active(this)" id="CategoryBtn4" class="text-decoration-none btn btn-primary mt-2 my-1 p-2 btn-icon-text">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="btn-text">Server Configuration</span>
+                    </button>
                 </div>
             </div>
+
             <div class="col-md-8 my-2">
                 <input type="text" class="w-100 search-box" oninput="search(this.value)" placeholder="Search for commands" />
                     <div class="mt-4"></div>
@@ -807,7 +825,7 @@
                                         <span>Functions:</span> <br />
                                         <span class="examples">
                                             <ul>
-                                                <li>Command Active Status</li>
+                                                <li>Command Active Status: [off/on] This controls if the commands [miniboss, miniboss start, miniboss giveaway] are enabled. When the command is enabled, only users who have the [host role] are able to use the command. </li>
                                                 <li>Ping Active Status</li>
                                                 <li>Custom Channels</li>
                                                 <li>Auto Unlock Channel</li>
