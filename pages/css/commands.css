@@ -21,15 +21,19 @@
     border: 1px solid #5941A9;
     padding: 5px;
     border-radius: 10px;
-    display: flex;
+    display: inline-flex; /* Set display to inline-flex */
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /* The HTML sets the box on the right, this sets the text left of that box */
     line-height: .5;
 }
 
 .icon-index i {
     font-size: 10px; /* Adjust size as needed */
     line-height: initial; /* Restore line height for the icons */
+}
+
+.icon-description {
+	color: #bdbdbd;
 }
 
 body {
@@ -189,9 +193,6 @@ hr {
 }
 .accordion-button::after {
 	display: none;
-}
-.icon-description {
-	color: #bdbdbd;
 }
 .command-title {
     display: inline-block; /* Ensure it behaves like a block element */
