@@ -209,7 +209,9 @@ hr {
     content: " - "; /* Add a dash before the description */
     margin-right: 5px; /* Add some space between the dash and text */
 }
-
+.examples {
+	color: #8b8b8b;
+}
 .examples dl {
 	list-style-type: none; /* Remove default list style */
 	font-size: smaller; /* Adjust the font size to make it smaller */
@@ -221,7 +223,6 @@ hr {
 }
 
 .examples dd {
-	color: #8b8b8b;
     margin-left: 0; /* Remove default left margin */
     padding-left: 20px; /* Add padding for bullet point */
     position: relative; /* Set position relative for positioning bullet point */

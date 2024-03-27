@@ -811,60 +811,99 @@
                                     <div class="accordion-body">
                                         <span>Usage:</span> <br />
                                         <span class="examples">
-                                            <ul><li>dna sc</li></ul>
+                                            dna sc
+                                            <ul>
+                                                <li>Part of the Server Config Suite</li>
+                                            </ul>
                                         </span>
                                         <span>Functions:</span> <br />
                                         <span class="examples">
-                                            <dl>
-                                                <dt>Command Active Status:</dt>
-                                                <dd>Enable and disable the commands [miniboss, miniboss start, miniboss giveaway].</dd>
-                                                <dd>When the command is enabled, only users who have the [host role] are able to use the command.</dd>
-
-                                                <dt>Ping Active Status:</dt>
-                                                <dd>Enable and disable the message to ping (@mention) the [ping role] at the start of a boosted miniboss.</dd>
-                                                <dd>This will use the role closest to the hosts saved level</dd>
-
-                                                <dt>Custom Channels:</dt>
-                                                <dd>Enabled and disable the use of the [start, end] channels.</dd>
-
-                                                <dt>Auto Unlock Channel:</dt>
-                                                <dd>Enable and disable the bot to auto unlock a channel.</dd>
-                                                <dd>This triggers after the ERPG bot displays the starting embed.</dd>
-                                                <dd>When enabled, the bot will reset users access to the channel at the conclusion of the boosted miniboss.</dd>
-
-                                                <dt>Allow Host Bans:</dt>
-                                                <dd>Gives the miniboss host the option to ban a user from the server by adding a server ban button on a bannable miniboss</dd>
-
-                                                <dt>Log Channel Status:</dt>
-                                                <dd>Enabled and disable the use of the [moderation, commands] log channels.</dd>
-
-                                                <dt>Event Mode:</dt>
-                                                <dd>By enabling even mode, the event ban length will take over as the default ban length</dd>
-
-                                            </dl>
+                                            Command Active Status:
+                                            <ul>
+                                                <li>Enable and disable the commands [miniboss, miniboss start, miniboss giveaway].</li>
+                                                <li>When the command is enabled, only users who have the [host role] are able to use the command.</li>
+                                            </ul>
+                                            Ping Active Status:
+                                            <ul>
+                                                <li>Enable and disable the message to ping (@mention) the [ping role] at the start of a boosted miniboss.</li>
+                                                <li>This will use the role closest to the host's saved level.</li>
+                                            </ul>
+                                            Custom Channels:
+                                            <ul>
+                                                <li>Enable and disable the use of the [start, end] channels.</li>
+                                            </ul>
+                                            Auto Unlock Channel:
+                                            <ul>
+                                                <li>Enable and disable the bot to auto unlock a channel.</li>
+                                                <li>This triggers after the ERPG bot displays the starting embed.</li>
+                                                <li>When enabled, the bot will reset users' access to the channel at the conclusion of the boosted miniboss.</li>
+                                            </ul>
+                                            Allow Host Bans:
+                                            <ul>
+                                                <li>Gives the miniboss host the option to ban a user from the server by adding a server ban button on a bannable miniboss.</li>
+                                            </ul>
+                                            Log Channel Status:
+                                            <ul>
+                                                <li>Enable and disable the use of the [moderation, commands] log channels.</li>
+                                            </ul>
+                                            Event Mode:
+                                            <ul>
+                                                <li>By enabling event mode, the event ban length will become the default ban length.</li>
+                                            </ul>
                                         </span>
-
                                         <span>Channels:</span> <br />
                                         <span class="examples">
+                                            Start Channel:
                                             <ul>
-                                                <li>Start channel</li>
-                                                <li>End channel</li>
-                                                <li>moderation logging</li>
-                                                <li>commands logging</li>
+                                                <li>When enabled, the starting miniboss message will display in this channel, regardless of where the host used the commands [miniboss, miniboss start, miniboss giveaway].</li>
+                                            </ul>
+                                            End Channel:
+                                            <ul>
+                                                <li>Description for End Channel.</li>
+                                            </ul>
+                                            Moderation Logging:
+                                            <ul>
+                                                <li>Description for Moderation Logging.</li>
+                                            </ul>
+                                            Commands Logging:
+                                            <ul>
+                                                <li>Description for Commands Logging.</li>
                                             </ul>
                                         </span>
                                         <span>Roles:</span> <br />
                                         <span class="examples">
+                                            Host:
                                             <ul>
-                                                <li>Host: This is role gives access to the miniboss command "dna mb [start, giveaway]" if the command is enabled in the server.</li>
-                                                <li>Notification</li>
-                                                <li>Extra Entries</li>
-                                                <li>Blacklisted</li>
+                                                <li>This role gives access to the miniboss command "dna mb [start, giveaway]" if the command is enabled in the server.</li>
+                                                <li>This is one role.</li>
+                                            </ul>
+                                            Notification:
+                                            <ul>
+                                                <li>On a miniboss giveaway, this role will be pinged (@mention) if the host is higher than the set host level.</li>
+                                                <li>Controlled by server-config miniboss setting [Ping Active Status].</li>
+                                                <li>A user with an extra entry role will recieve the number of entries set by the role.</li>
+                                                <li>Up to three roles.</li>
+                                            </ul>
+                                            Extra Entries:
+                                            <ul>
+                                                <li>On a miniboss giveaway, winners are determined randomly from a collected pool.</li>
+                                                <li>A user with an extra entry role will recieve the number of entries set by the role.</li>
+                                                <li>Up to three roles.</li>
+                                            </ul>
+                                            Blacklisted:
+                                            <ul>
+                                                <li>These are roles that regardles of anything, the user will not be able to enter a boosted miniboss monitored by DNA.</li>
+                                                <li>Up to two roles.</li>
                                             </ul>
                                         </span>
                                         <span>Bans:</span> <br />
                                         <span class="examples">
-                                            This will display all currently banned players in the server. This is not for all hosts in the server, only those banned on the server. Use the select menu to unban a user. Once a user has been unbanned, this action cannot be undone.<br>
+                                            <ul>
+                                                <li>This will display all currently banned players in the server.</li>
+                                                <li>This does not include hosts banned players, only those banned on the server.</li>
+                                                <li>Use the select menu to unban a user.</li>
+                                                <li>Once a user has been unbanned, this action cannot be undone.</li>
+                                            </ul>
                                         </span>
 
                                     </div>
