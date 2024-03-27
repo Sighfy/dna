@@ -743,6 +743,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="accordion accordion-flush mt-2" id="listeners">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
@@ -756,7 +757,10 @@
                                     <div class="accordion-body">
                                         <span>Usage:</span> <br />
                                         <span class="examples">
-                                            dna sc<br>
+                                            dna sc
+                                            <ul>
+                                                <li>Part of the Server Config Suite</li>
+                                            </ul>
                                         </span>
                                         <span>How to:</span> <br />
                                         <span class="examples">
@@ -855,19 +859,19 @@
                                         <span class="examples">
                                             Start Channel:
                                             <ul>
-                                                <li>When enabled, the starting miniboss message will display in this channel, regardless of where the host used the commands [miniboss, miniboss start, miniboss giveaway].</li>
+                                                <li>When this option is enabled, the starting miniboss message will be displayed in the designated channel. This applies regardless of where the host initiated the miniboss commands [miniboss, miniboss start, miniboss giveaway].</li>
                                             </ul>
                                             End Channel:
                                             <ul>
-                                                <li>Description for End Channel.</li>
+                                                <li>This functions similarly to the start channel, but it pertains to the channel where the final miniboss message is displayed, allowing users to interact and participate.</li>
                                             </ul>
                                             Moderation Logging:
                                             <ul>
-                                                <li>Description for Moderation Logging.</li>
+                                                <li>If enabled, this feature will log any bans made during a miniboss event. This provides administrators with a record of moderation actions taken during miniboss activities.</li>
                                             </ul>
                                             Commands Logging:
                                             <ul>
-                                                <li>Description for Commands Logging.</li>
+                                                <li>Enabling commands logging will create a log of all commands used and their timestamps. This helps track command usage and facilitates monitoring of bot activities.</li>
                                             </ul>
                                         </span>
                                         <span>Roles:</span> <br />
@@ -910,6 +914,40 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="accordion accordion-flush mt-2" id="sc_portal_settings">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsc_portal_settings">
+                                        <span class='badge badge-vip rounded-pill'><i class='fa-solid fa-gear'></i></span>&nbsp;
+                                        <span class="command-title">portal_settings</span>&nbsp;
+                                        <span class="command-description">Time Travel, Level, and Void sc_portal_settings</span>
+                                    </button>
+                                </h2>
+                                <div id="fsc_portal_settings" class="accordion-collapse collapse" data-bs-parent="#sc_portal_settings">
+                                    <div class="accordion-body">
+                                        <span>Usage:</span> <br />
+                                        <span class="examples">
+                                            dna sc
+                                            <ul>
+                                                <li>Part of the Server Config Suite</li>
+                                            </ul>
+                                        </span>
+                                        <span>How to:</span> <br />
+                                        <span class="examples">
+                                            <ul>
+                                                <li>This allows a the command [/portal server] to display the set portals.</li>
+                                                <li>There are five categories to server portals, (Partners, Showcase, Support, Event, Default). By default all added channels will be placed in the default category.</li>
+                                                <li>Up to 20 channels can be added. There are no limitations to individual categories.</li>
+                                            </ul>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
             </div>
@@ -1009,7 +1047,8 @@
                 &#34;commands&#34;: [
                     &#34;server_config&#34;,
                     &#34;listeners&#34;,
-                    &#34;sc_miniboss_settings&#34;
+                    &#34;sc_miniboss_settings&#34;,
+                    &#34;sc_portal_settings&#34;
                 ]
             }
         ]" hidden />
