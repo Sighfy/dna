@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -95,7 +95,7 @@
           <a href="https://github.com/Sighfy" class="navbar-item is-tab" target="_blank">
             <i class="fa-brands fa-github"></i>
           </a>
-          
+
           <!--<div class="navbar-item">
             <div class="buttons">
               <a href="#" class="button is-blurple">
@@ -185,7 +185,7 @@
         setInterval(fadeOutAndIn, 5000);
       }, 1000); // Delay before starting the animation sequence (in milliseconds)
     </script>
-    
+
     <!-- Hero Section End -->
 
     <!-- Hero Waves Start -->
@@ -199,7 +199,7 @@
     <!-- Hero Waves End -->
 
     <!-- Features Section Start -->
-    <section id="features" class="section mt-6">
+    <section id="features" class="section">
       <div class="has-text-centered">
         <h1 class="title lined">Why DNA?</h1>
         <div class="line line-center blurple"></div>
@@ -208,41 +208,62 @@
       <!-- single feature start (Left) -->
       <div class="single-feature">
         <div class="columns mt-6">
-          <div class="column mr-6">
+          <div class="column"  data-aos="fade-right">
             <h4 class="title">Server <span class="blurple">Configuration</span></h4>
-            <p class="subtitle mt-3">
-              As the pioneering ERPG server and player assistant bot, DNA empowers server admins with unprecedented control. Through this command, admins dictate boosted miniboss behavior, manage server listeners (like time travel and void), and oversee portals. With DNA's Server Config command, customization is effortless, enabling admins to tailor the gameplay experience. Elevate your ERPG server with DNA's powerful Server Config command!
-            </p>
+            <div class="subtitle is-6 mt-3 blurplebox">
+              As the pioneering ERPG server and player assistant bot, DNA's Server Config command empowers server admins with unprecedented control.<br><br>
+              <ul style="list-style-type: disc; padding-left: 2rem;">
+                <li>Admins, you decide who get's access, log that access, and retain control of your server</li>
+                <li>Dictate boosted miniboss behavior</li>
+                <li>Manage server listeners like time travel, level, and void</li>
+                <li>Oversee server portals (a different way to show off your server or other servers)</li>
+              </ul>
+            </div>
           </div>
           <div class="column" data-aos="fade-left">
             <img
               class="image has-image-centered"
               src="images/serverconfig.png"
               alt="server config command image"
-              style="width: 23rem;"
+              style="width: 50rem;"
             />
           </div>
         </div>
       </div>
       <!-- single feature end (Left) -->
 
+
       <!-- single feature start (Right) -->
       <div class="single-feature">
-        <div class="columns mt-6">
+        <div class="columns">
           <div class="column" data-aos="fade-right">
             <img
               class="image has-image-centered"
-              src="images/minibosscommand.png"
+              src="images/memberminiboss.png"
               alt="miniboss commands images"
-              style="width: 23rem;"
+              style="width: 50rem;"
             />
           </div>
-          <div class="column">
-            <h4 class="title">Boosted <span class="has-text-danger">Minibosses</span>
-            </h4>
-            <p class="subtitle mt-3">              
-              DNA revolutionizes the concept of boosted minibosses by offering unparalleled customization options. Server administrators wield full control over miniboss activity, logging, designated channels, and assigned roles. Furthermore, hosts have the liberty to tailor giveaways, set specific time travel requirements, and even exercise individualized ban options for enhanced management. With DNA, each server can sculpt its unique miniboss experience to perfection, ensuring a truly immersive and tailored gameplay adventure.
-            </p>
+          <div class="column"  data-aos="fade-left">
+            <h4 class="title">Boosted <span class="has-text-danger">Minibosses</span></h4>
+            <div class="subtitle is-6 mt-3 redbox">
+              This feature splits control between server admins and miniboss hosts. It only makes it fair right?<br><br>
+              Using the server config command:
+              <ul style="list-style-type: disc; padding-left: 2rem;">
+                <li>Take full control over miniboss activity, logging, designated channels, and assigned roles</li>
+                <li>Customize hosts amount of control in server banning and auto channel unlocking</li>
+                <li>Manage bans in your server and if they are automatic or host controlled</li>
+                <li>Use the level listener to auto verify miniboss hosts</li>
+              </ul>
+              <br>
+              As the host, you decide how to run your miniboss:
+              <ul style="list-style-type: disc; padding-left: 2rem;">
+                <li>Save your settings (and bans) between servers</li>
+                <li>Automatic bans and/or rerolls with custom ban lengths</li>
+                <li>Display the predicted amount of coins you'll get (minimum and maximum)</li>
+                <li>DNA can predict the minimum time travel to join your boosted miniboss, or set it yourself</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -250,22 +271,27 @@
 
       <!-- single feature start (Left) -->
       <div class="single-feature">
-        <div class="columns mt-6">
-          <div class="column mr-6">
-            <h4 class="title">
-              Complex <span class="has-text-primary">Listeners</span>
-            </h4>
-            <p class="subtitle mt-3">
-              
-              Whether it's time travel, level monitoring, or delving into the void, DNA has you covered for all your server's ERPG listener needs. Whether you prefer standard time travel verification, automatic miniboss host filtering with the level listener, a secluded void area, or all three, DNA's customization options ensure you get precisely what you need for your ERPG Discord Server. Elevate your ERPG adventure with DNA's tailored solutions.
-            </p>
+        <div class="columns">
+          <div class="column" data-aos="fade-right">
+            <h4 class="title">Complex <span class="has-text-primary">Listeners</span></h4>
+            <div class="subtitle is-6 mt-3 greenbox">
+              Whether it's time travel, level monitoring, or delving into the void, DNA has you covered for all your server's ERPG listener needs.<br><br>
+              <ul style="list-style-type: disc; padding-left: 2rem;">
+                <li>Strongest ERPG verification system to exist</li>
+                <li>First customizeable time travel verification system</li>
+                <li>Automatic miniboss host filtering with the level listener</li>
+                <li>Distinguish those who made it into the void with void verification</li>
+                <li>Choose which channel each listener is linked to, and what roles are used</li>
+                <li>DNA's customization options ensure you get precisely what you need for your ERPG Discord Server</li>
+              </ul>
+            </div>
           </div>
           <div class="column" data-aos="fade-left">
             <img
-              class="image has-image-centered"
-              src="images/listener.png"
+              class="image"
+              src="images/serverconfiglisteners.png"
               alt="feature1 img"
-              style="width: 23rem;"
+              style="width: 50rem;"
             />
           </div>
         </div>
@@ -273,7 +299,7 @@
       <!-- single feature end (Left) -->
 
       <!-- single feature start (Right) -->
-      <!-- 
+      <!--
       <div class="single-feature">
         <div class="columns mt-6">
           <div class="column" data-aos="fade-right">
@@ -297,11 +323,11 @@
       </div>
       -->
       <!-- single feature end (Right) -->
-      
+
     </section>
     <!-- Features Section End -->
 
-    <!-- Stats Section Start -->
+    <!-- Stats Section Start
     <section id="stats" class="section mt-6">
       <div class="has-text-centered">
         <h1 class="title lined">Stats (Coming Soon)</h1>
@@ -325,7 +351,7 @@
         </div>
       </div>
     </section>
-    <!-- Stats Section End -->
+    Stats Section End -->
 
     <!-- Invite Section Start -->
     <section class="section mt-6">
@@ -368,7 +394,7 @@
 
         <p>
           <span class="has-text-weight-bold">DNA</span>
-           logo designed by 
+           logo designed by
           <a
             href="https://www.instagram.com/creatornot_here/?igsh=eThjd2ltMmNlaWxp"
             class="blurple has-text-weight-bold"
@@ -376,7 +402,16 @@
             >
             CreatorNot_here
             </a>
-        </p> 
+        </p>
+        <p>
+          <span class="has-text-weight-bold"></span>
+           Feature graphics created by
+          <a
+            class="blurple has-text-weight-bold"
+            >
+            Juuls.l
+            </a>
+        </p>
 
         <!--<p style="letter-spacing: 0.1em;" class="is-uppercase">
           Website Designed By
@@ -391,7 +426,7 @@
             target="_blank"
             >Github</a
           >
-        </p> --> 
+        </p> -->
       </div>
     </footer>
     <!-- Footer Section End -->
