@@ -192,12 +192,21 @@ nav.nav-w {
   animation: mover 0.5s infinite alternate;
 }
 
-@-webkit-keyframes mover {
+@keyframes mover {
   0% {
-    transform: translateY(0);
+      transform: translateY(0);
   }
   100% {
-    transform: translateY(-10px);
+      transform: translateY(-10px);
+  }
+}
+
+@-webkit-keyframes mover /* Safari and Chrome */ {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px);
   }
 }
 
