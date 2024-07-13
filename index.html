@@ -1,9 +1,4 @@
 <!--
-  | Website landing page designed by JstnLT (https://jstnlt.my.id)
-  | This project is open source: https://github.com/JastinXyz/discord-bot-landing-page-web
-  | Animations by Sighfy (https://sighfy.dev)
--->
-<!--
   https://coolors.co/palette/301934-2a2041-24274d-183466-004f98-3c7ab2-78a4cc-96b9d9-b4cee6-f0f8ff
 
   https://coolors.co/palette/e5d4ed-6d72c3-5941a9-514f59-1d1128
@@ -29,6 +24,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" type="text/css" href="fire.css">
 
     <script src="assets/js/jquery-3.6.0.js"></script>
   </head>
@@ -90,10 +86,6 @@
         <div class="navbar-end">
           <a href="https://discord.gg/kEcRuXJtmH" class="navbar-item is-tab" target="_blank">
             <i class="fa-brands fa-discord"></i>
-          </a>
-
-          <a href="https://github.com/Sighfy" class="navbar-item is-tab" target="_blank">
-            <i class="fa-brands fa-github"></i>
           </a>
 
           <!--<div class="navbar-item">
@@ -374,22 +366,13 @@
     <!-- Invite Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="footer bg-base">
+    <footer class="footer bg-base overflow-hidden">
       <div class="content has-text-centered has-text-white">
-        <div class="mb-2">
-          <a href="https://discord.gg/kEcRuXJtmH" class="has-text-white" target="_blank">
-            <i class="fa-brands fa-discord"></i>
-          </a>
-          &nbsp; &nbsp;
-          <a href="https://github.com/Sighfy" class="has-text-white" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
 
         <p>
           <span class="has-text-weight-bold">DNA</span>
           <br />
-          &copy; <span id="cp-year"></span> Sighfy. All Rights Reserved.
+          &copy; <span id="cp-year"></span> Pyrobyte LLC. All Rights Reserved.
         </p>
 
         <p>
@@ -412,21 +395,59 @@
             Juuls.l
             </a>
         </p>
-
-        <!--<p style="letter-spacing: 0.1em;" class="is-uppercase">
-          Website Designed By
-          <a
-            href="https://jstnlt.my.id"
-            class="blurple has-text-weight-bold"
-            target="_blank"
-            >JstnLT</a
-          >.<br>The Original Website Design is Open Source on <a
-            href="https://github.com/JastinXyz/discord-bot-landing-page-web"
-            class="blurple has-text-weight-bold"
-            target="_blank"
-            >Github</a
-          >
-        </p> -->
+      </div>
+      <div class="container p-0 m-0">
+        <div class="animation-wrapper">
+          <div class="fire-animation">
+            <div class="fire-goo">
+              <div class="fire-pit">
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+              </div>
+            </div>
+            <div class="smoke">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="fire-text">
+            <a href="https://pyrobyte.tech">
+              <span class="fire">p</span><span class="burn">y</span><span class="burn">r</span><span
+                class="fire">o</span><span class="burn">b</span><span class="fire">y</span><span
+                class="burn">t</span><span class="fire">e</span><span class="fire">.</span><span
+                class="burn">t</span><span class="fire">e</span><span class="burn">c</span><span class="fire">h</span>
+            </a>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: none;">
+          <defs>
+            <filter id="goop">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                result="goop" />
+              <feBlend in="SourceGraphic" in2="goop" />
+            </filter>
+          </defs>
+        </svg>
       </div>
     </footer>
     <!-- Footer Section End -->

@@ -33,7 +33,7 @@ $(document).ready(function() {
 // navbar on scroll
 $(function () {
   $(window).on("scroll", function () {
-    if ($(window).scrollTop() > 700) {
+    if ($(window).scrollTop() > 1000) {
       $("nav").addClass("nav-w");
       $(".navbar-menu").addClass("nav-w");
       $(".navbar-item").addClass("nav-dark");
