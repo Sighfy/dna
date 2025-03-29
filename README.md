@@ -8,13 +8,13 @@ The `main` branch of this repository contains the latest updates, fixes, and fea
 
 ## Website
 
-The website for DNA Bot can be accessed at [DNA Bot website](https://sighfy.dev/dna). Please note that the content on this site corresponds to the `gh-pages` branch of this repository.
+The website for DNA Bot can be accessed at [DNA Bot website](https://dna.sighfy.dev/). Please note that the content on this site corresponds to the `gh-pages` branch of this repository.
 
 ## Support
 
 If you encounter any issues, bugs, or have suggestions for new features, please open an issue on this repository. We appreciate your feedback and will work to address any concerns promptly.
 
-For support related to the DNA Discord Bot, please consider joining our official Discord server. You can open a support ticket there to receive assistance from our team. Visit the [DNA Bot website](https://sighfy.dev/dna) for a link to our official Discord server.
+For support related to the DNA Discord Bot, please consider joining our official Discord server. You can open a support ticket there to receive assistance from our team. Visit the [DNA Bot website](https://dna.sighfy.dev/) for a link to our official Discord server.
 
 ## Contact
 
